@@ -16,7 +16,7 @@ public class DesencriptarActivity extends AppCompatActivity {
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
-        if(bundle.isEmpty()){
+        if(bundle != null){
             String password = bundle.getString("PASS");
             Toast.makeText(this, "Contraseña es "+password, Toast.LENGTH_SHORT).show();
         }
