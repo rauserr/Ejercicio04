@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 public class DesencriptarActivity extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class DesencriptarActivity extends AppCompatActivity {
             //Usuario usuario = new Usuario(email,password);
             Usuario usuario = (Usuario) bundle.getSerializable("USER");
             Toast.makeText(this, usuario.toString(), Toast.LENGTH_SHORT).show();
-        }
+            }
 
     }
 }
